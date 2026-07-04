@@ -1,3 +1,3 @@
-# The Found House v4 Ambience Build
+# The Found House v5 Signature Edition
 
-Built around the feeling of browsing a warm, inviting place people want to return to.
+Signature ambience-driven website foundation.
