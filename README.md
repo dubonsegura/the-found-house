@@ -1,12 +1,20 @@
-# The Found House
+# The Found House — Version 2.0
 
-Static HTML/CSS website for Stage One launch.
+Production-ready static release.
 
-## Deploy to Hostinger with Git
-Use the contents of this folder as the root of the repository. Hostinger should deploy the `main` branch to `public_html`.
+## Upload
+Upload all contents of this folder to Hostinger `public_html`.
 
-## Files to edit most often
-- `index.html` — homepage content
-- `css/style.css` — design system and layouts
-- `js/script.js` — menu and reveal animations
-- `images/` — product and brand photography
+## Included
+- index.html
+- philosophy.html
+- shop.html
+- journal.html
+- contact.html
+- about.html
+- css/style.css
+- js/script.js
+- assets/
+
+## Direction
+Cream + olive editorial homepage for The Found House: a modern cabinet of curiosities.

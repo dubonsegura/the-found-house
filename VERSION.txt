@@ -1,4 +1,2 @@
-The Found House
-Version: v1.4.0 Easy Upload
-Milestone: Cream + Olive Editorial Homepage
-Notes: Use this as the next test homepage. Upload unzipped contents to GitHub or Hostinger File Manager.
+The Found House Version 2.0.0
+Release: Modern Cabinet Homepage
