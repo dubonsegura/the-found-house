@@ -1,0 +1,376 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Our Story | The Found House</title>
+<style>
+:root{
+  --cream:#f7f0e3;
+  --ivory:#fffaf2;
+  --warm:#efe2cb;
+  --ink:#202018;
+  --muted:#746c5f;
+  --olive:#4f5c35;
+  --olive-dark:#26311d;
+  --line:#dfd1bd;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--ivory);
+  color:var(--ink);
+  font-family:Georgia,'Times New Roman',serif;
+}
+img{display:block;max-width:100%;height:auto}
+a{text-decoration:none;color:inherit}
+p{font-family:Arial,sans-serif;line-height:1.75;color:var(--muted)}
+.container{
+  width:min(1180px, calc(100% - 48px));
+  margin:0 auto;
+}
+.site-header{
+  background:rgba(255,250,242,.97);
+  border-bottom:1px solid var(--line);
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+.header-inner{
+  min-height:94px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:40px;
+}
+.brand{
+  width:290px;
+  text-align:center;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+}
+.brand span{display:block;font-size:12px}
+.brand strong{
+  display:block;
+  font-size:34px;
+  font-weight:400;
+  line-height:1;
+  letter-spacing:.08em;
+}
+.brand small{
+  display:block;
+  margin-top:7px;
+  font-family:Arial,sans-serif;
+  font-size:10px;
+  color:var(--muted);
+  letter-spacing:.18em;
+  text-transform:none;
+}
+.nav{
+  display:flex;
+  gap:34px;
+  font-family:Arial,sans-serif;
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+}
+.hero{
+  min-height:82vh;
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:flex-end;
+  padding:90px 0;
+  border-bottom:1px solid var(--line);
+}
+.hero-card{
+  width:min(760px,100%);
+  background:rgba(255,250,242,.88);
+  border:1px solid var(--line);
+  padding:48px;
+}
+.eyebrow{
+  font-family:Arial,sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.23em;
+  color:var(--olive);
+  font-size:12px;
+  font-weight:700;
+}
+h1,h2,h3{font-weight:400;margin:0;color:var(--ink)}
+h1{
+  font-size:clamp(46px, 6vw, 86px);
+  line-height:1;
+  letter-spacing:-.04em;
+  margin:18px 0 24px;
+}
+h2{
+  font-size:clamp(36px, 4vw, 60px);
+  line-height:1.08;
+  letter-spacing:-.035em;
+  margin:14px 0 22px;
+}
+h3{font-size:28px;margin:20px 0 6px}
+.button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:52px;
+  padding:0 24px;
+  margin:8px 10px 0 0;
+  background:var(--olive);
+  color:#fff;
+  border:1px solid var(--olive);
+  font-family:Arial,sans-serif;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+.button.secondary{
+  background:transparent;
+  color:var(--ink);
+  border-color:var(--ink);
+}
+.section{padding:88px 0}
+.center{text-align:center}
+.narrow{max-width:850px;margin:0 auto}
+.intro{text-align:center}
+.intro p{max-width:720px;margin:0 auto}
+.grid-5{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:18px;
+}
+.tile{
+  position:relative;
+  display:block;
+  min-height:350px;
+  overflow:hidden;
+  border:1px solid var(--line);
+  background:var(--cream);
+}
+.tile img{
+  width:100%;
+  height:100%;
+  min-height:350px;
+  object-fit:cover;
+  transition:transform .5s ease;
+}
+.tile:hover img{transform:scale(1.04)}
+.tile:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg,rgba(0,0,0,.02),rgba(0,0,0,.52));
+}
+.tile span{
+  position:absolute;
+  left:22px;
+  bottom:20px;
+  z-index:2;
+  color:#fff;
+  font-family:Arial,sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-size:12px;
+  font-weight:700;
+}
+.story{
+  background:var(--cream);
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+.story-grid{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:0;
+  align-items:stretch;
+}
+.story-grid img{
+  width:100%;
+  height:620px;
+  object-fit:cover;
+}
+.story-copy{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:70px;
+}
+.row-title{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:24px;
+  margin-bottom:38px;
+}
+.row-title a{
+  font-family:Arial,sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  color:var(--olive);
+  font-size:12px;
+  font-weight:700;
+}
+.grid-4{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:22px;
+}
+.card{
+  background:#fff;
+  border:1px solid var(--line);
+  text-align:center;
+  overflow:hidden;
+}
+.card img{
+  width:100%;
+  height:300px;
+  object-fit:cover;
+}
+.card div{padding:24px}
+.warm{background:var(--warm)}
+.feedback{
+  background:var(--cream);
+  text-align:center;
+}
+.feedback-form{
+  margin-top:32px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+  text-align:left;
+}
+.feedback-form label{
+  background:#fff;
+  border:1px solid var(--line);
+  padding:20px;
+  font-family:Arial,sans-serif;
+}
+.feedback-form textarea{
+  grid-column:1/-1;
+  min-height:120px;
+  border:1px solid var(--line);
+  padding:18px;
+  font-family:Arial,sans-serif;
+}
+.feedback-form button{
+  grid-column:1/-1;
+  min-height:54px;
+  background:var(--olive);
+  color:#fff;
+  border:0;
+  font-family:Arial,sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-weight:700;
+}
+.grid-3{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+.footer{
+  background:linear-gradient(110deg,var(--olive-dark),#202415);
+  color:#fff;
+  padding:70px 0;
+}
+.footer-grid{
+  display:grid;
+  grid-template-columns:1.4fr 1fr 1.5fr;
+  gap:50px;
+}
+.footer h3{color:#fff;font-size:32px}
+.footer h4{
+  font-family:Arial,sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.18em;
+  font-size:12px;
+}
+.footer p,.footer a{color:#efe9dd}
+.footer a{display:block;margin:8px 0;font-family:Arial,sans-serif}
+.footer form{
+  display:flex;
+  max-width:370px;
+  border:1px solid rgba(255,255,255,.5);
+}
+.footer input{
+  flex:1;
+  border:0;
+  background:transparent;
+  color:#fff;
+  padding:15px;
+}
+.footer button{
+  width:54px;
+  border:0;
+  background:transparent;
+  color:#fff;
+}
+.copyright{
+  background:#171a11;
+  color:#e9e1d4;
+  padding:18px 5vw;
+  font-family:Arial,sans-serif;
+  font-size:12px;
+}
+.page-hero{
+  background:var(--cream);
+  border-bottom:1px solid var(--line);
+  padding:110px 0;
+  text-align:center;
+}
+.prose{
+  padding:88px 0;
+}
+.prose p{
+  font-family:Georgia,'Times New Roman',serif;
+  font-size:28px;
+  line-height:1.65;
+  color:var(--ink);
+}
+.contact-card{
+  width:min(820px, calc(100% - 48px));
+  margin:86px auto;
+  padding:54px;
+  text-align:center;
+  background:var(--cream);
+  border:1px solid var(--line);
+}
+@media(max-width:1100px){
+  .grid-5,.grid-4{grid-template-columns:repeat(2,1fr)}
+  .story-grid{grid-template-columns:1fr}
+  .story-grid img{height:480px}
+  .grid-3{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:760px){
+  .container{width:min(100% - 36px,1180px)}
+  .header-inner{display:block;text-align:center;padding:18px 0}
+  .brand{width:auto;margin:0 auto 18px}
+  .brand strong{font-size:26px}
+  .nav{justify-content:center;flex-wrap:wrap;gap:18px}
+  .hero{min-height:auto;padding:40px 0}
+  .hero-card{padding:28px}
+  h1{font-size:46px}
+  h2{font-size:36px}
+  .section{padding:58px 0}
+  .grid-5,.grid-4,.grid-3,.feedback-form{grid-template-columns:1fr}
+  .tile,.tile img{min-height:300px}
+  .story-copy{padding:44px 0}
+  .row-title{display:block}
+  .footer-grid{grid-template-columns:1fr}
+}
+</style>
+</head><body><header class="site-header"><div class="container header-inner">
+<a class="brand" href="index.html"><span>The</span><strong>Found House</strong><small>Beautiful things, thoughtfully found.</small></a>
+<nav class="nav"><a href="collections.html">Explore</a><a href="philosophy.html">Our Story</a><a href="journal.html">Notes</a><a href="contact.html">Contact</a></nav>
+</div></header><main><section class="page-hero"><div class="container narrow"><div class="eyebrow center">Our Story</div><h1>Everything we find has a chance to become someone’s favorite.</h1></div></section>
+<section class="prose"><div class="container narrow">
+<p>We believe that everything we find — whether brand new, gently used, or beautifully aged — carves out its own unique value.</p>
+<p>Our mission is simple: to hunt down exceptional pieces and connect them with the people who will love, appreciate, and give them a wonderful new home.</p>
+<p>One person’s “moved-on-from” is another person’s absolute favorite find. We love rescuing new and old treasures that still have so much value to offer.</p>
+<p>Our goal is to bring these unique items straight to you, so they can be loved all over again.</p>
+</div></section>
+<img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?auto=format&fit=crop&w=1600&q=85" alt="" style="width:100%;height:560px;object-fit:cover;"></main><footer class="footer"><div class="container footer-grid">
+<div><h3>The Found House</h3><p>Exceptional pieces — brand new, gently used, or beautifully aged — chosen for the people who will love them next.</p></div>
+<div><h4>Explore</h4><a href="collections.html">Explore Finds</a><a href="philosophy.html">Our Story</a><a href="journal.html">Found Notes</a><a href="contact.html">Contact</a></div>
+<div><h4>Join the Hunt</h4><p>Be first to know when remarkable finds arrive.</p><form><input type="email" placeholder="Your email address"><button type="button">→</button></form></div>
+</div></footer><div class="copyright">© 2026 The Found House. All rights reserved.</div></body></html>
