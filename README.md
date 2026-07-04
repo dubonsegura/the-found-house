@@ -1,3 +1,3 @@
-# The Found House v5 Signature Edition
+# The Found House v5.1 Layout Repair
 
-Signature ambience-driven website foundation.
+Centered layout repair for Version 5 Signature Edition.
