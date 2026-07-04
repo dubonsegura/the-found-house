@@ -1,0 +1,5 @@
+The Found House
+Stage 1 - Polished HTML/CSS launch version
+Version: 1.2.0
+Date: 2026-07-03
+Focus: Editorial homepage, improved navigation, real imagery, Shop the Room, New Arrivals, Journal preview, responsive polish.
