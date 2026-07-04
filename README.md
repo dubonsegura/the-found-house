@@ -1,3 +1,3 @@
-# The Found House v3.1 Editorial Home
+# The Found House v3.2 Real Photo Refresh
 
-Polished editorial homepage and all core pages.
+Uses realistic editorial stock photography instead of drawings/placeholders.
