@@ -1,86 +1,102 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>The Found House | Modern Cabinet of Curiosities</title>
-  <meta name="description" content="The Found House is a modern cabinet of curiosities—furniture, art, jewelry, vintage clothing, eyewear, coins, and remarkable objects chosen for craftsmanship, character, and story.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="The Found House is a modern cabinet of curiosities filled with furniture, art, vintage clothing, jewelry, eyewear, coins, and remarkable objects chosen with intention." />
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <div class="announcement">A modern cabinet of curiosities · Collected with Intention · Meant to Be Lived With</div>
-  <header class="site-header">
-    <a class="brand" href="index.html" aria-label="The Found House home">THE FOUND HOUSE</a>
-    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">Menu</button>
-    <nav class="site-nav" aria-label="Main navigation">
-      <a href="index.html">Home</a><a href="shop.html">Shop</a><a href="shop.html#furniture">Furniture</a><a href="shop.html#art">Art</a><a href="shop.html#jewelry">Jewelry</a><a href="shop.html#clothing">Clothing</a><a href="shop.html#coins">Coins</a><a href="philosophy.html">Philosophy</a>
+  <div class="topbar">Collected with Intention. Meant to Be Lived With.</div>
+  <header class="site-header" id="top">
+    <a class="brand" href="index.html" aria-label="The Found House home">
+      <span>The</span>
+      <strong>Found House</strong>
+      <em>Modern Cabinet of Curiosities</em>
+    </a>
+    <button class="menu-toggle" aria-label="Open menu">☰</button>
+    <nav class="nav">
+      <a href="#collection">Collection</a>
+      <a href="#recent">Recent Finds</a>
+      <a href="#notes">Found Notes</a>
+      <a href="philosophy.html">Our Philosophy</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </nav>
+    <div class="icons" aria-label="shopping links"><span>⌕</span><span>♡</span><span>♧</span></div>
   </header>
 
-  <main id="main">
-    <section class="hero hero-editorial reveal">
-      <div class="hero-media"><img src="images/cat-cabinet.jpg" alt="Collected objects arranged like a modern cabinet of curiosities"></div>
-      <div class="hero-copy">
-        <p class="eyebrow">Modern Cabinet of Curiosities</p>
-        <h1>Collected with Intention.<br>Meant to Be Lived With.</h1>
-        <p>A modern cabinet of curiosities where furniture, art, jewelry, vintage clothing, eyewear, coins, and remarkable objects are chosen for their craftsmanship, character, and the stories they carry.</p>
-        <div class="actions"><a class="btn primary" href="shop.html">Explore the Collection</a><a class="btn secondary" href="philosophy.html">Our Philosophy</a></div>
+  <main>
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Furniture · Art · Jewelry · Eyewear · Coins · Objects</p>
+        <h1>Collected with Intention.<br><em>Meant to Be Lived With.</em></h1>
+        <p>A modern cabinet of curiosities filled with furniture, art, vintage clothing, jewelry, eyewear, coins, and remarkable objects chosen for their craftsmanship, character, and the stories they carry.</p>
+        <div class="actions">
+          <a class="btn primary" href="#collection">Explore the Collection</a>
+          <a class="btn ghost" href="philosophy.html">Our Philosophy</a>
+        </div>
+      </div>
+      <div class="hero-image reveal delay" role="img" aria-label="Curated table with art, lamp, books, objects and warm daylight"></div>
+    </section>
+
+    <section id="collection" class="section collection-section">
+      <div class="section-head reveal">
+        <p class="eyebrow">Discover</p>
+        <h2>Explore the Collection</h2>
+      </div>
+      <div class="collection-grid">
+        <a class="collection-card reveal" href="shop.html"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=700&q=80" alt="Antique furniture in warm interior"><span>Furniture</span></a>
+        <a class="collection-card reveal" href="shop.html"><img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=700&q=80" alt="Framed artwork"><span>Art</span></a>
+        <a class="collection-card reveal" href="shop.html"><img src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=700&q=80" alt="Vintage leather jacket"><span>Vintage Clothing</span></a>
+        <a class="collection-card reveal" href="shop.html"><img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=700&q=80" alt="Jewelry closeup"><span>Jewelry</span></a>
+        <a class="collection-card reveal" href="shop.html"><img src="https://images.unsplash.com/photo-1577803645773-f96470509666?auto=format&fit=crop&w=700&q=80" alt="Vintage sunglasses"><span>Eyewear</span></a>
+        <a class="collection-card reveal" href="shop.html"><img src="https://images.unsplash.com/photo-1621761191319-c6fb62004040?auto=format&fit=crop&w=700&q=80" alt="Old coins"><span>Coins</span></a>
+        <a class="collection-card reveal" href="shop.html"><img src="https://images.unsplash.com/photo-1513519245088-0e12902e35ca?auto=format&fit=crop&w=700&q=80" alt="Ceramic vessel"><span>Objects</span></a>
+        <a class="collection-card reveal" href="shop.html"><img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=700&q=80" alt="Cabinet with collected objects"><span>Collector's Cabinet</span></a>
       </div>
     </section>
 
-    <section class="section intro reveal">
-      <p class="section-kicker">The Found House</p>
-      <h2>A business built around things I cherish—with the hope that others will cherish them too.</h2>
-      <p class="intro-copy">Every object is selected as a future heirloom, a conversation piece, or a quiet detail that makes a home feel more personal.</p>
-    </section>
-
-    <section class="section collections reveal">
-      <div class="section-heading"><p class="section-kicker">Discover the Collection</p><h2>Enter by curiosity, leave with something worth keeping.</h2></div>
-      <div class="collection-grid cabinet-grid">
-        <a class="collection-card large" href="shop.html#furniture"><img src="images/story-chair.jpg" alt="Vintage furniture"><span>Furniture</span><em>Tables, chairs, cabinets</em></a>
-        <a class="collection-card" href="shop.html#art"><img src="images/cat-art.jpg" alt="Art and paintings"><span>Art</span><em>Paintings & sculpture</em></a>
-        <a class="collection-card" href="shop.html#jewelry"><img src="images/cat-jewelry.jpg" alt="Vintage jewelry"><span>Jewelry</span><em>Rings & adornment</em></a>
-        <a class="collection-card" href="shop.html#clothing"><img src="images/cat-clothing.jpg" alt="Vintage clothing"><span>Vintage Clothing</span><em>Jackets & wardrobe</em></a>
-        <a class="collection-card" href="shop.html#eyewear"><img src="images/prod-ring.jpg" alt="Vintage eyewear and accessories"><span>Eyewear</span><em>Sunglasses & glasses</em></a>
-        <a class="collection-card" href="shop.html#coins"><img src="images/cat-coins.jpg" alt="Coins and currency"><span>Coins</span><em>Currency & keepsakes</em></a>
-        <a class="collection-card" href="shop.html#objects"><img src="images/prod-sculpture.jpg" alt="Objects and decor"><span>Objects</span><em>Ceramics, books, curiosities</em></a>
-        <a class="collection-card" href="shop.html#cabinet"><img src="images/cat-cabinet.jpg" alt="Collector's cabinet"><span>Collector’s Cabinet</span><em>The rare and unexpected</em></a>
-      </div>
-    </section>
-
-    <section class="section shop-room reveal">
-      <div class="room-copy"><p class="section-kicker">The Collector’s Room</p><h2>Not a showroom. A place of discovery.</h2><p>The Found House brings together the useful, the beautiful, and the unusual—objects that feel discovered rather than manufactured.</p><a class="text-link" href="shop.html">Shop the edit</a></div>
-      <div class="room-image"><img src="images/newsletter.jpg" alt="Warm styled room with collected vintage finds"><a class="hotspot one" href="shop.html#furniture">Chair</a><a class="hotspot two" href="shop.html#jewelry">Ring</a><a class="hotspot three" href="shop.html#art">Art</a></div>
-    </section>
-
-    <section class="section reveal">
-      <div class="section-heading"><p class="section-kicker">Recent Finds</p><h2>Chosen because they deserve another life.</h2></div>
+    <section id="recent" class="section recent-section">
+      <div class="split-head reveal"><h2>Recent Finds</h2><a href="shop.html">View all →</a></div>
       <div class="product-grid">
-        <article class="product-card"><img src="images/prod-bust.jpg" alt="Bronze bust sculpture"><div><p>Bronze Bust Sculpture</p><span>Recent Find</span></div><button>View Details</button></article>
-        <article class="product-card"><img src="images/prod-ring.jpg" alt="Vintage ring"><div><p>Vintage Statement Ring</p><span>Recent Find</span></div><button>View Details</button></article>
-        <article class="product-card"><img src="images/prod-jacket.jpg" alt="Vintage leather jacket"><div><p>Vintage Leather Jacket</p><span>Recent Find</span></div><button>View Details</button></article>
-        <article class="product-card"><img src="images/prod-coin.jpg" alt="Collectible coin"><div><p>Collector’s Coin</p><span>Recent Find</span></div><button>View Details</button></article>
+        <article class="product reveal"><img src="https://images.unsplash.com/photo-1616627781431-23b776aad6f8?auto=format&fit=crop&w=800&q=80" alt="Antique table"><h3>Antique Wood Side Table</h3><p>$1,250</p></article>
+        <article class="product reveal"><img src="https://images.unsplash.com/photo-1549887534-1541e9326642?auto=format&fit=crop&w=800&q=80" alt="Bronze sculpture"><h3>Bronze Figure Study</h3><p>$1,250</p></article>
+        <article class="product reveal"><img src="https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?auto=format&fit=crop&w=800&q=80" alt="Landscape painting"><h3>Oil on Canvas Landscape</h3><p>$950</p></article>
+        <article class="product reveal"><img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80" alt="Sunglasses"><h3>Vintage French Sunglasses</h3><p>$195</p></article>
+        <article class="product reveal"><img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80" alt="Green stone ring"><h3>Art Deco Signet Ring</h3><p>$425</p></article>
       </div>
     </section>
 
-    <section class="story-band reveal">
-      <img src="images/cat-cabinet.jpg" alt="Curated cabinet of objects">
-      <div><p class="section-kicker">Why We Choose These Pieces</p><h2>Every object must earn its place.</h2><p>The Found House is built around things I cherish and want people to enjoy. I collect pieces I would proudly live with myself—not because they are perfect, but because they have beauty, craftsmanship, character, or a story worth carrying forward.</p><a class="btn secondary light" href="philosophy.html">Read Our Philosophy</a></div>
+    <section class="philosophy-preview">
+      <div class="philosophy-image reveal"></div>
+      <div class="philosophy-copy reveal">
+        <p class="eyebrow">The Found House Philosophy</p>
+        <h2>Why We Choose These Pieces</h2>
+        <p>We believe the most beautiful things are the ones that have lived a life. Every piece is chosen because it offers beauty, craftsmanship, character, or a story worth carrying forward.</p>
+        <p class="quote">“I’m building a business of things I cherish and want people to enjoy.”</p>
+        <a class="btn olive" href="philosophy.html">Read Our Philosophy</a>
+      </div>
     </section>
 
-    <section class="section journal-preview reveal">
-      <div class="section-heading"><p class="section-kicker">Found Notes</p><h2>Small stories about objects, patina, craft, and collecting.</h2></div>
-      <div class="journal-grid"><a href="journal.html"><span>Objects</span><h3>Why Character Matters More Than Perfection</h3></a><a href="journal.html"><span>Style</span><h3>The Quiet Beauty of Old Leather</h3></a><a href="journal.html"><span>Collecting</span><h3>What Makes a Piece Worth Keeping?</h3></a></div>
+    <section id="notes" class="section notes-section">
+      <div class="split-head reveal"><h2>Found Notes</h2><a href="journal.html">View all notes →</a></div>
+      <div class="notes-grid">
+        <article class="note reveal"><img src="https://images.unsplash.com/photo-1600166898405-da9535204843?auto=format&fit=crop&w=700&q=80" alt="Aged bowl"><div><p>May 18, 2026</p><h3>Why Patina Matters</h3><span>Read more →</span></div></article>
+        <article class="note reveal"><img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=700&q=80" alt="Leather jacket"><div><p>May 11, 2026</p><h3>The Story Behind a Leather Jacket</h3><span>Read more →</span></div></article>
+        <article class="note reveal"><img src="https://images.unsplash.com/photo-1523292562811-8fa7962a78c8?auto=format&fit=crop&w=700&q=80" alt="Collected table objects"><div><p>May 4, 2026</p><h3>Five Things I Look For Before Bringing an Object Home</h3><span>Read more →</span></div></article>
+      </div>
     </section>
-
-    <section class="newsletter reveal"><p class="section-kicker">Join The Found Notes</p><h2>Receive recent finds, stories behind objects, and notes on living with character.</h2><form><label class="sr-only" for="email">Email address</label><input id="email" type="email" placeholder="Email address"><button class="btn primary" type="submit">Join</button></form></section>
   </main>
 
-  <footer class="footer"><div><strong>THE FOUND HOUSE</strong><p>A modern cabinet of curiosities. Every piece has been somewhere. Every piece belongs somewhere.</p></div><nav><a href="shop.html">Shop</a><a href="philosophy.html">Philosophy</a><a href="journal.html">Found Notes</a><a href="contact.html">Contact</a></nav></footer>
+  <footer class="footer">
+    <div><h2>The Found House</h2><p>A modern cabinet of curiosities filled with things we cherish and want people to enjoy.</p><p class="social">◎  ⓟ  f  ✉</p></div>
+    <div><h3>Join Our Journey</h3><p>Sign up for notes on new finds, stories, and inspiration.</p><form><input type="email" placeholder="Your email address" aria-label="Email address"><button>→</button></form></div>
+    <div><h3>Navigation</h3><a href="#collection">Collection</a><a href="#recent">Recent Finds</a><a href="philosophy.html">Our Philosophy</a><a href="journal.html">Found Notes</a></div>
+    <div><h3>Contact</h3><p>hello@foundhouseco.com</p><p>Mon–Fri · 10am–5pm</p></div>
+  </footer>
   <script src="js/script.js"></script>
 </body>
 </html>
