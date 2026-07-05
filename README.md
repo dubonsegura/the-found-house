@@ -1,3 +1,3 @@
-# The Found House Clean Recovery Build
+# The Found House v6 Signature Experience
 
-Self-contained HTML/CSS recovery build. No external CSS file required.
+A self-contained signature website build for The Found House.
