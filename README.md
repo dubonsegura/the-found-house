@@ -1,3 +1,3 @@
-# The Found House v6 Signature Experience
+# The Found House v7 Signature Edition
 
-A self-contained signature website build for The Found House.
+Larger typography, stronger story, featured sculpture, buyer feeling section, and self-contained CSS.
