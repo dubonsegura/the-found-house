@@ -1,27 +1,21 @@
-# Found House Co. Website Update v1.0.3
+# Found House Co. Website Update v1.0.4
 
 Prepared by: Atlas
 Date: July 5, 2026
 
 ## Update
-Added the first official curated piece:
+Added elegant acquisition options for Continuum:
 
-Continuum
-Original California Studio Abstract Steel Sculpture
-Price: $485
+- Acquire This Piece
+- Present an Offer
+- Reserve for 8 Hours
 
-## Included
-- New product page: continuum.html
-- Product image: assets/images/products/continuum/continuum-sculpture.jpg
-- Provenance certificate image: assets/images/products/continuum/continuum-provenance-certificate.jpg
-- Homepage Curator's Selection feature
-- Collections page product entry
-- Product page styling
+Also added a clearer homepage path so visitors can get to the curated piece faster.
 
 ## Hostinger Upload Instructions
 1. Go to Hostinger File Manager.
 2. Open `public_html`.
-3. Upload `found-houseco-v1.0.3-continuum-product.zip`.
+3. Upload `found-houseco-v1.0.4-acquire-offer-reserve.zip`.
 4. Extract it inside `public_html`.
 5. Choose **Overwrite** when prompted.
 6. Do not delete existing files first.
@@ -30,7 +24,7 @@ Price: $485
 Upload/extract the same files into your GitHub website repository.
 
 Recommended commit message:
-Add Continuum product page and Curator's Selection
+Add acquire offer reserve options for Continuum
 
 ## Filing Instructions
 Save this ZIP here:

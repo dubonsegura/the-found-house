@@ -1,4 +1,4 @@
 Found House Co. Website
-Version: v1.0.3
-Update: Added Continuum product page, homepage Curator's Selection, product images, and provenance certificate.
+Version: v1.0.4
+Update: Added Acquire This Piece, Present an Offer, and Reserve for 8 Hours options for Continuum; improved homepage path to collection.
 Date: July 5, 2026
