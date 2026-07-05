@@ -1,24 +1,39 @@
-The Found House Release 1.1 — Phase 1 Brand Identity Polish
+# Found House Co. Website Update v1.0.2
 
-Upload/overwrite the contents of this folder to Hostinger public_html and GitHub.
+Prepared by: Atlas
+Date: July 5, 2026
 
-This is NOT a rebuild. It is a brand identity polish release.
+## Update
+Corrected the Contact Us email to:
 
-Main changes:
-- More refined logo spacing
-- More premium navigation hover treatment
-- Better hero proportions
-- Cleaner typography rhythm
-- More elegant buttons
-- Softer shadows and card hover effects
-- Gallery-style sculpture treatment
-- Improved footer polish
-- Cache-busting updated to ?v=1.1
+hello@foundhouseco.com
 
-Most important changed file:
-- css/styles.css
-
-Also updated:
-- HTML cache links
+## Files Updated
+- contact.html
+- Any other site files containing outdated contact email references
 - VERSION.txt
-- README.md
+
+## Hostinger Upload Instructions
+1. Go to Hostinger File Manager.
+2. Open `public_html`.
+3. Upload the ZIP file:
+   `found-houseco-v1.0.2-contact-email-fix.zip`
+4. Extract it inside `public_html`.
+5. Choose **Overwrite** when prompted.
+6. Do not delete existing files first.
+
+## GitHub Instructions
+Upload/extract the same files into your GitHub website repository and commit:
+
+`Fix contact email to hello@foundhouseco.com`
+
+## Filing Instructions
+Save this ZIP here:
+
+OneDrive
+└── Found House Co.
+    └── 03 - Website
+        └── Working Files
+
+Status:
+Website Working Update
