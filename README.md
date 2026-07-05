@@ -1,3 +1,15 @@
-# The Found House v8.1 Smaller Hero
+The Found House v8.1 Production Clean
 
-Refined from Version 8 with a shorter first hero section, smaller opening headline, reduced panel padding, and more page content visible above the fold.
+Upload the CONTENTS of this folder to Hostinger public_html and GitHub.
+This version uses a clean structure:
+- index.html
+- collections.html
+- philosophy.html
+- journal.html
+- contact.html
+- css/styles.css
+- js/app.js
+- images/signature-sculpture.png
+- docs/brand-brief.txt
+
+If replacing an older version, overwrite all matching files.
