@@ -1,21 +1,23 @@
-# Found House Co. Website Update v1.0.8
+# Found House Co. Website Update v2.0
 
 Prepared by: Atlas
 Date: July 5, 2026
 
 ## Update
-Removes the side-image experiment from the Curator's Selection section.
+Clean homepage rebuild.
 
 ## Changes
-- Removed decorative certificate placement from the homepage.
-- Removed side-image layout that was displaying poorly.
-- Restored a clean, centered Curator's Selection panel.
-- Keeps the certificate only where it belongs: on the Continuum product page.
+- Rebuilt homepage from scratch to stop alignment issues.
+- Kept existing navigation, pages, product page, and brand direction.
+- Centered hero, vision, Curator's Selection, and journal callout.
+- Made Continuum easy to find near the top of the homepage.
+- Kept Acquire / Offer / Reserve on the product page.
+- Preserved the existing site foundation and other pages.
 
 ## Hostinger Upload Instructions
 1. Go to Hostinger File Manager.
 2. Open `public_html`.
-3. Upload `found-houseco-v1.0.8-clean-curator-section.zip`.
+3. Upload `found-houseco-v2.0-clean-homepage.zip`.
 4. Extract it inside `public_html`.
 5. Choose **Overwrite** when prompted.
 6. Do not delete existing files first.
@@ -25,7 +27,7 @@ Removes the side-image experiment from the Curator's Selection section.
 Upload/extract the same files into your GitHub website repository.
 
 Recommended commit message:
-Clean Curator's Selection homepage section
+Rebuild homepage clean layout v2.0
 
 ## Filing Instructions
 Save this ZIP here:
