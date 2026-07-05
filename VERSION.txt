@@ -1,4 +1,4 @@
 Found House Co. Website
-Version: v1.0.7
-Update: Added inviting side imagery to the Curator's Selection section.
+Version: v1.0.8
+Update: Removed homepage side-image experiment and restored clean Curator's Selection layout.
 Date: July 5, 2026

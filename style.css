@@ -451,86 +451,90 @@
 
 
 /* =========================================================
-   Found House Co. v1.0.7 - Curator Side Images
-   Purpose: add inviting side imagery around Curator's Selection
+   Found House Co. v1.0.8 - Clean Curator Section
+   Purpose: remove side-image experiment and keep homepage clean
    ========================================================= */
 
-.fhc-continuum-feature-with-sides {
-  position: relative !important;
-  isolation: isolate !important;
-  overflow: hidden !important;
-  min-height: 620px !important;
+.fhc-side-image,
+.fhc-side-image-left,
+.fhc-side-image-right,
+.fhc-continuum-feature-with-sides .fhc-side-image {
+  display: none !important;
 }
 
-.fhc-continuum-feature-with-sides::before {
-  content: "" !important;
-  position: absolute !important;
-  inset: 0 !important;
-  background: linear-gradient(90deg, rgba(250,246,238,0.88), rgba(250,246,238,0.96) 28%, rgba(250,246,238,0.96) 72%, rgba(250,246,238,0.88)) !important;
-  z-index: -1 !important;
-}
-
-.fhc-side-image {
-  position: absolute !important;
-  top: 50% !important;
-  transform: translateY(-50%) !important;
-  width: min(23vw, 310px) !important;
-  height: min(48vw, 560px) !important;
-  opacity: 0.28 !important;
-  z-index: -2 !important;
-  pointer-events: none !important;
-}
-
-.fhc-side-image img {
+.fhc-continuum-feature {
   width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  display: block !important;
-  filter: saturate(0.72) contrast(0.9) !important;
+  margin: clamp(36px, 5vw, 72px) 0 !important;
+  padding: clamp(34px, 5vw, 72px) 20px !important;
+  background:
+    linear-gradient(135deg, rgba(250,246,238,0.92), rgba(255,250,242,0.96)) !important;
+  border-top: 1px solid rgba(37, 33, 29, 0.12) !important;
+  border-bottom: 1px solid rgba(37, 33, 29, 0.12) !important;
+  overflow: hidden !important;
 }
 
-.fhc-side-image-left {
-  left: max(18px, calc((100vw - 1320px) / 2)) !important;
-}
-
-.fhc-side-image-right {
-  right: max(18px, calc((100vw - 1320px) / 2)) !important;
-}
-
-.fhc-side-image-left img {
-  border-radius: 0 140px 140px 0 !important;
-}
-
-.fhc-side-image-right img {
-  border-radius: 140px 0 0 140px !important;
-}
-
-.fhc-continuum-feature-with-sides .fhc-continuum-feature-inner {
-  position: relative !important;
-  z-index: 1 !important;
-  background: rgba(255, 250, 242, 0.78) !important;
+.fhc-continuum-feature-inner {
+  width: min(1100px, 100%) !important;
+  margin: 0 auto !important;
+  display: grid !important;
+  grid-template-columns: minmax(280px, 0.9fr) minmax(300px, 1.1fr) !important;
+  align-items: center !important;
+  gap: clamp(30px, 5vw, 70px) !important;
+  background: rgba(255, 250, 242, 0.84) !important;
   border: 1px solid rgba(37, 33, 29, 0.12) !important;
-  padding: clamp(22px, 3vw, 42px) !important;
-  box-shadow: 0 22px 60px rgba(37, 33, 29, 0.07) !important;
+  padding: clamp(24px, 4vw, 48px) !important;
+  box-shadow: 0 22px 60px rgba(37, 33, 29, 0.06) !important;
 }
 
-@media (max-width: 1020px) {
-  .fhc-side-image {
-    opacity: 0.18 !important;
-    width: 180px !important;
-  }
+.fhc-continuum-image img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 400px !important;
+  max-height: 540px !important;
+  object-fit: contain !important;
+  margin: 0 auto !important;
+  background: #f7f1e8 !important;
+}
+
+.fhc-continuum-copy {
+  max-width: 560px !important;
+  margin: 0 auto !important;
+  text-align: left !important;
+}
+
+.fhc-continuum-copy h2 {
+  font-size: clamp(50px, 7vw, 90px) !important;
+  line-height: 0.98 !important;
+  margin: 0 0 16px !important;
+}
+
+.fhc-feature-actions {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 12px !important;
+}
+
+.fhc-feature-actions .button {
+  margin: 0 !important;
 }
 
 @media (max-width: 820px) {
-  .fhc-continuum-feature-with-sides {
-    min-height: auto !important;
+  .fhc-continuum-feature-inner {
+    grid-template-columns: 1fr !important;
   }
 
-  .fhc-side-image {
-    display: none !important;
+  .fhc-continuum-image img {
+    max-width: 340px !important;
+    max-height: 440px !important;
   }
 
-  .fhc-continuum-feature-with-sides .fhc-continuum-feature-inner {
-    background: rgba(255, 250, 242, 0.86) !important;
+  .fhc-feature-actions {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  .fhc-feature-actions .button {
+    text-align: center !important;
+    width: 100% !important;
   }
 }
