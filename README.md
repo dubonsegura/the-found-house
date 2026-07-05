@@ -1,18 +1,20 @@
-The Found House v8.2 Production Update
+The Found House v9 Clean Foundation
 
-This is an incremental production update.
+This is a clean foundation build.
 
-To update from v8.1:
-1. Replace index.html
-2. Replace css/styles.css
+Upload the CONTENTS of this folder to Hostinger public_html and GitHub.
 
-The other files are included for convenience, but the main changes are index.html and css/styles.css.
+Files:
+- index.html
+- collections.html
+- philosophy.html
+- journal.html
+- contact.html
+- css/styles.css
+- js/app.js
+- images/signature-sculpture.png
+- docs/brand-brief.txt
 
-Changes:
-- Shorter hero
-- More poetic hero headline
-- Shorter hero paragraph
-- Added Miguel founder story section
-- Added Found Note #001
-- Removed extra homepage filler
-- Refined spacing and proportions
+Cache-busting has been added:
+- css/styles.css?v=9
+- js/app.js?v=9
