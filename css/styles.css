@@ -192,3 +192,318 @@ h3 { font-size:32px; line-height:1.14; margin-bottom:12px; }
 @media(max-width:760px) {
   .kit-grid, .swatch-grid, .template-grid { grid-template-columns:1fr; }
 }
+
+
+/* =========================================================
+   The Found House — Release 1.1
+   Phase 1: Brand Identity Polish
+   ========================================================= */
+
+:root {
+  --ivory:#fffaf2;
+  --cream:#f7efe3;
+  --warm:#eadcc3;
+  --paper:#fffdf8;
+  --deep:#171f14;
+  --ink:#202018;
+  --muted:#6c6559;
+  --olive:#4f5c35;
+  --olive-dark:#26311d;
+  --brass:#a48a53;
+  --line:#ddcdb7;
+  --shadow:0 24px 70px rgba(32,32,24,.11);
+  --soft-shadow:0 16px 42px rgba(32,32,24,.08);
+}
+
+/* Softer page feeling */
+body {
+  background:
+    radial-gradient(circle at top left, rgba(234,220,195,.30), transparent 34rem),
+    var(--ivory);
+  color:var(--ink);
+}
+
+/* Logo / header refinement */
+.site-header {
+  background:rgba(255,250,242,.96);
+  border-bottom:1px solid rgba(221,205,183,.95);
+}
+
+.header-inner {
+  min-height:98px;
+}
+
+.brand {
+  text-align:left;
+  min-width:360px;
+}
+
+.brand span {
+  font-size:12px;
+  letter-spacing:.22em;
+  margin-left:130px;
+}
+
+.brand strong {
+  font-size:43px;
+  letter-spacing:.095em;
+}
+
+.brand small {
+  font-size:13px;
+  letter-spacing:.24em;
+  margin-top:10px;
+  padding-left:52px;
+}
+
+.nav {
+  gap:30px;
+  font-size:14px;
+  letter-spacing:.18em;
+}
+
+.nav a {
+  position:relative;
+  padding:14px 0;
+}
+
+.nav a::after {
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:7px;
+  height:1px;
+  background:var(--olive);
+  transform:scaleX(0);
+  transform-origin:center;
+  transition:transform .28s ease;
+}
+
+.nav a:hover {
+  border-color:transparent;
+}
+
+.nav a:hover::after {
+  transform:scaleX(1);
+}
+
+/* Typography refinement */
+.eyebrow {
+  color:var(--olive);
+  letter-spacing:.28em;
+  font-size:13px;
+}
+
+h1, h2, h3 {
+  text-wrap:balance;
+}
+
+h1 {
+  letter-spacing:-.05em;
+}
+
+h2 {
+  letter-spacing:-.045em;
+}
+
+p {
+  color:var(--muted);
+}
+
+/* Hero feels more premium and less heavy */
+.hero {
+  min-height:48vh;
+  background-position:center 48%;
+}
+
+.hero-panel {
+  width:min(650px,100%);
+  padding:36px 40px;
+  background:rgba(255,250,242,.88);
+  border:1px solid rgba(255,250,242,.82);
+  box-shadow:0 26px 80px rgba(28,31,22,.14);
+}
+
+.hero-panel h1 {
+  font-size:clamp(40px,3.75vw,62px);
+}
+
+.hero-panel p {
+  font-size:1.04rem;
+  line-height:1.8;
+}
+
+/* Buttons feel more intentional */
+.button {
+  min-height:62px;
+  padding:0 34px;
+  letter-spacing:.17em;
+  transition:background .25s ease, color .25s ease, transform .25s ease, box-shadow .25s ease;
+}
+
+.button:hover {
+  transform:translateY(-2px);
+  box-shadow:0 14px 30px rgba(38,49,29,.18);
+}
+
+.button.secondary {
+  background:rgba(255,250,242,.62);
+}
+
+/* Better rhythm */
+.section {
+  padding:104px 0;
+}
+
+.quote-section {
+  padding:82px 0;
+}
+
+.quote-section h2 {
+  max-width:980px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/* Add refined top/bottom separators */
+.vision-section,
+.featured-section,
+.feedback-section,
+.page-hero {
+  border-top:1px solid rgba(221,205,183,.8);
+  border-bottom:1px solid rgba(221,205,183,.8);
+}
+
+/* Cards with a more polished visual identity */
+.collection-card,
+.card,
+.feeling-card,
+.kit-card,
+.contact-card {
+  border-color:rgba(221,205,183,.95);
+  box-shadow:0 0 0 rgba(32,32,24,0);
+  transition:transform .28s ease, box-shadow .28s ease, border-color .28s ease;
+}
+
+.collection-card:hover,
+.card:hover,
+.feeling-card:hover,
+.kit-card:hover {
+  transform:translateY(-4px);
+  box-shadow:var(--soft-shadow);
+  border-color:rgba(164,138,83,.48);
+}
+
+.collection-card img,
+.card img {
+  filter:saturate(.95) contrast(.98);
+}
+
+/* Featured sculpture more gallery-like */
+.sculpture-stage {
+  background:
+    radial-gradient(circle at 50% 42%, rgba(255,250,242,.96), rgba(234,220,195,.82) 62%, rgba(222,205,176,.74)),
+    var(--warm);
+  border-color:rgba(164,138,83,.38);
+}
+
+.curator-note {
+  background:rgba(255,250,242,.76);
+  border-left-color:var(--brass);
+}
+
+/* Feedback form refinement */
+.feedback-form label {
+  transition:transform .22s ease, border-color .22s ease, background .22s ease;
+}
+
+.feedback-form label:hover {
+  transform:translateY(-2px);
+  border-color:rgba(164,138,83,.60);
+  background:var(--paper);
+}
+
+.feedback-form input[type="checkbox"] {
+  transform:scale(1.12);
+  margin-right:8px;
+}
+
+.feedback-form textarea,
+.footer input {
+  outline:none;
+}
+
+.feedback-form textarea:focus {
+  border-color:var(--olive);
+  box-shadow:0 0 0 3px rgba(79,92,53,.10);
+}
+
+/* Footer polish */
+.footer {
+  background:linear-gradient(180deg,#1b2417,#10160e);
+}
+
+.footer h3 {
+  letter-spacing:-.02em;
+}
+
+.footer a {
+  transition:color .2s ease, transform .2s ease;
+}
+
+.footer a:hover {
+  color:white;
+  transform:translateX(3px);
+}
+
+/* Brand kit polish */
+.swatch {
+  box-shadow:var(--soft-shadow);
+}
+
+/* Mobile polish */
+@media(max-width:760px) {
+  .header-inner {
+    min-height:auto;
+  }
+
+  .brand {
+    text-align:center;
+    min-width:0;
+  }
+
+  .brand span {
+    margin-left:0;
+  }
+
+  .brand strong {
+    font-size:34px;
+  }
+
+  .brand small {
+    padding-left:0;
+    font-size:12px;
+  }
+
+  .hero {
+    min-height:auto;
+    padding:34px 0;
+  }
+
+  .hero-panel {
+    padding:28px 24px;
+  }
+
+  .button {
+    width:100%;
+  }
+
+  .section {
+    padding:70px 0;
+  }
+
+  .quote-section {
+    padding:70px 0;
+  }
+}
