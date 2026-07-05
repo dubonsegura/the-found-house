@@ -247,3 +247,72 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+
+/* =========================================================
+   Found House Co. v1.0.5 - Curator Placement Refinement
+   ========================================================= */
+
+/* Hide/remove previous quick collection path if browser cache still loads it */
+.quick-collection-path {
+  display: none !important;
+}
+
+/* Make the Curator's Selection / Featured Find area feel centered and intentional */
+.curators-selection.continuum-home-card {
+  margin: clamp(28px, 5vw, 56px) auto !important;
+  width: min(1120px, calc(100% - 40px)) !important;
+  display: grid !important;
+  grid-template-columns: minmax(320px, 0.95fr) minmax(320px, 1.05fr) !important;
+  align-items: center !important;
+  gap: clamp(28px, 5vw, 68px) !important;
+  text-align: left !important;
+}
+
+/* Put copy first and image second in a balanced gallery-style layout */
+.curators-selection.continuum-home-card .selection-copy {
+  max-width: 520px !important;
+  margin: 0 auto !important;
+}
+
+.curators-selection.continuum-home-card .selection-image {
+  display: block !important;
+}
+
+.curators-selection.continuum-home-card img {
+  max-height: 560px !important;
+  object-fit: contain !important;
+}
+
+.selection-subtitle {
+  font-size: clamp(18px, 2vw, 26px) !important;
+  color: #25211d !important;
+  line-height: 1.35 !important;
+  margin-bottom: 10px !important;
+}
+
+.curators-selection .home-card-actions {
+  margin-top: 22px !important;
+}
+
+.curators-selection .text-link {
+  display: inline-block !important;
+  margin-top: 8px !important;
+}
+
+@media (max-width: 820px) {
+  .curators-selection.continuum-home-card {
+    grid-template-columns: 1fr !important;
+    width: min(100% - 28px, 680px) !important;
+    text-align: left !important;
+  }
+
+  .curators-selection.continuum-home-card .selection-copy {
+    max-width: 100% !important;
+  }
+
+  .curators-selection.continuum-home-card img {
+    max-height: 460px !important;
+  }
+}
