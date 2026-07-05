@@ -316,3 +316,221 @@
     max-height: 460px !important;
   }
 }
+
+
+
+/* =========================================================
+   Found House Co. v1.0.6 - Curator Section Repair
+   Purpose: repair homepage Curator's Selection layout
+   ========================================================= */
+
+/* Disable older experimental curator blocks if cached or still present */
+.quick-collection-path,
+.curators-selection.continuum-home-card {
+  display: none !important;
+}
+
+/* Clean homepage feature */
+.fhc-continuum-feature {
+  width: 100% !important;
+  margin: clamp(36px, 5vw, 72px) 0 !important;
+  padding: clamp(28px, 5vw, 64px) 20px !important;
+  background: rgba(250, 246, 238, 0.72) !important;
+  border-top: 1px solid rgba(37, 33, 29, 0.14) !important;
+  border-bottom: 1px solid rgba(37, 33, 29, 0.14) !important;
+  overflow: hidden !important;
+}
+
+.fhc-continuum-feature-inner {
+  width: min(1120px, 100%) !important;
+  margin: 0 auto !important;
+  display: grid !important;
+  grid-template-columns: minmax(280px, 0.85fr) minmax(300px, 1.15fr) !important;
+  align-items: center !important;
+  gap: clamp(28px, 5vw, 72px) !important;
+}
+
+.fhc-continuum-image,
+.fhc-continuum-copy {
+  min-width: 0 !important;
+}
+
+.fhc-continuum-image img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 430px !important;
+  max-height: 560px !important;
+  object-fit: contain !important;
+  margin: 0 auto !important;
+  background: #f7f1e8 !important;
+}
+
+.fhc-continuum-copy {
+  text-align: left !important;
+  max-width: 560px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+
+.fhc-continuum-copy .eyebrow {
+  margin-bottom: 14px !important;
+}
+
+.fhc-continuum-copy h2 {
+  font-size: clamp(50px, 7vw, 92px) !important;
+  line-height: 0.96 !important;
+  margin: 0 0 16px !important;
+  letter-spacing: -0.035em !important;
+}
+
+.fhc-continuum-copy .selection-subtitle {
+  font-size: clamp(19px, 2vw, 28px) !important;
+  line-height: 1.35 !important;
+  color: #25211d !important;
+  margin: 0 0 14px !important;
+}
+
+.fhc-continuum-copy p {
+  line-height: 1.75 !important;
+}
+
+.fhc-continuum-copy .price {
+  font-size: 30px !important;
+  font-weight: 700 !important;
+  margin: 18px 0 22px !important;
+  color: #25211d !important;
+}
+
+.fhc-feature-actions {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 12px !important;
+  align-items: center !important;
+}
+
+.fhc-feature-actions .button {
+  margin: 0 !important;
+  white-space: nowrap !important;
+}
+
+.fhc-feature-actions .secondary-button {
+  background: transparent !important;
+  color: #25211d !important;
+}
+
+@media (max-width: 820px) {
+  .fhc-continuum-feature {
+    padding: 34px 16px !important;
+  }
+
+  .fhc-continuum-feature-inner {
+    grid-template-columns: 1fr !important;
+  }
+
+  .fhc-continuum-copy {
+    text-align: left !important;
+    max-width: 100% !important;
+  }
+
+  .fhc-continuum-image img {
+    max-width: 360px !important;
+    max-height: 460px !important;
+  }
+
+  .fhc-feature-actions {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  .fhc-feature-actions .button {
+    text-align: center !important;
+    width: 100% !important;
+  }
+}
+
+
+
+/* =========================================================
+   Found House Co. v1.0.7 - Curator Side Images
+   Purpose: add inviting side imagery around Curator's Selection
+   ========================================================= */
+
+.fhc-continuum-feature-with-sides {
+  position: relative !important;
+  isolation: isolate !important;
+  overflow: hidden !important;
+  min-height: 620px !important;
+}
+
+.fhc-continuum-feature-with-sides::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background: linear-gradient(90deg, rgba(250,246,238,0.88), rgba(250,246,238,0.96) 28%, rgba(250,246,238,0.96) 72%, rgba(250,246,238,0.88)) !important;
+  z-index: -1 !important;
+}
+
+.fhc-side-image {
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  width: min(23vw, 310px) !important;
+  height: min(48vw, 560px) !important;
+  opacity: 0.28 !important;
+  z-index: -2 !important;
+  pointer-events: none !important;
+}
+
+.fhc-side-image img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+  filter: saturate(0.72) contrast(0.9) !important;
+}
+
+.fhc-side-image-left {
+  left: max(18px, calc((100vw - 1320px) / 2)) !important;
+}
+
+.fhc-side-image-right {
+  right: max(18px, calc((100vw - 1320px) / 2)) !important;
+}
+
+.fhc-side-image-left img {
+  border-radius: 0 140px 140px 0 !important;
+}
+
+.fhc-side-image-right img {
+  border-radius: 140px 0 0 140px !important;
+}
+
+.fhc-continuum-feature-with-sides .fhc-continuum-feature-inner {
+  position: relative !important;
+  z-index: 1 !important;
+  background: rgba(255, 250, 242, 0.78) !important;
+  border: 1px solid rgba(37, 33, 29, 0.12) !important;
+  padding: clamp(22px, 3vw, 42px) !important;
+  box-shadow: 0 22px 60px rgba(37, 33, 29, 0.07) !important;
+}
+
+@media (max-width: 1020px) {
+  .fhc-side-image {
+    opacity: 0.18 !important;
+    width: 180px !important;
+  }
+}
+
+@media (max-width: 820px) {
+  .fhc-continuum-feature-with-sides {
+    min-height: auto !important;
+  }
+
+  .fhc-side-image {
+    display: none !important;
+  }
+
+  .fhc-continuum-feature-with-sides .fhc-continuum-feature-inner {
+    background: rgba(255, 250, 242, 0.86) !important;
+  }
+}

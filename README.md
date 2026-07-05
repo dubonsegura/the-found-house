@@ -1,25 +1,21 @@
-# Found House Co. Website Update v1.0.5
+# Found House Co. Website Update v1.0.7
 
 Prepared by: Atlas
 Date: July 5, 2026
 
 ## Update
-Refined the homepage placement for Continuum.
+Adds subtle inviting images to both sides of the Curator's Selection section.
 
 ## Changes
-- Removed the separate “go straight to collection” block that felt awkward.
-- Moved Curator's Selection higher on the homepage.
-- Folded acquisition language into the featured/curator section.
-- Improved alignment so the section does not sit too far left.
-- Kept the acquisition options on the Continuum product page:
-  - Acquire This Piece
-  - Present an Offer
-  - Reserve for 8 Hours
+- Added left side image using the Continuum sculpture.
+- Added right side image using the provenance certificate.
+- Kept the main Curator's Selection content centered and readable.
+- Side images are decorative, soft, and hidden on mobile for clean viewing.
 
 ## Hostinger Upload Instructions
 1. Go to Hostinger File Manager.
 2. Open `public_html`.
-3. Upload `found-houseco-v1.0.5-curator-placement-fix.zip`.
+3. Upload `found-houseco-v1.0.7-curator-side-images.zip`.
 4. Extract it inside `public_html`.
 5. Choose **Overwrite** when prompted.
 6. Do not delete existing files first.
@@ -28,7 +24,7 @@ Refined the homepage placement for Continuum.
 Upload/extract the same files into your GitHub website repository.
 
 Recommended commit message:
-Refine Curator's Selection homepage placement
+Add side imagery to Curator's Selection section
 
 ## Filing Instructions
 Save this ZIP here:
@@ -37,6 +33,3 @@ OneDrive
 └── Found House Co.
     └── 03 - Website
         └── Working Files
-
-Status:
-Website Working Update
