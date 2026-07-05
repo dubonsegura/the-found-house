@@ -1,5 +1,10 @@
 Found House Co. Website
-Version: RESTORE - Last Good Foundation
-Source: v1.0.4 acquire / offer / reserve
-Purpose: Restore the working website foundation after the failed v2.0 test.
+Version: v1.0.5
+Update: Layout refinement only.
 Date: July 5, 2026
+
+Changes:
+- Fixed overlap between "Come in. Take your time." and title.
+- Centered and balanced Continuum / Curator's Selection section.
+- No redesign.
+- No foundation changes.

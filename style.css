@@ -247,3 +247,132 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+
+/* =========================================================
+   Found House Co. v1.0.5 - Layout Refinement
+   Purpose:
+   1. Stop "Come in. Take your time." from overlapping title.
+   2. Center and balance the Continuum / Curator's Selection section.
+   ========================================================= */
+
+/* Hero eyebrow spacing fix */
+.hero .eyebrow,
+.hero-eyebrow,
+.come-in,
+.come-in-banner,
+[class*="eyebrow"] {
+  letter-spacing: 0.32em !important;
+}
+
+/* Only target the homepage hero headline area */
+.hero h1,
+.home-hero h1,
+.intro h1 {
+  margin-top: 18px !important;
+}
+
+/* If the hero eyebrow sits too close, give it its own space */
+.hero p:first-child,
+.home-hero p:first-child,
+.intro p:first-child {
+  margin-bottom: 18px !important;
+}
+
+/* Continuum / Curator's Selection centering */
+.curators-selection,
+.continuum-home-card,
+.featured-find,
+.featured-product,
+section:has(a[href="continuum.html"]) {
+  width: min(1120px, calc(100% - 40px)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center !important;
+}
+
+/* Center all direct children in the curator section */
+.curators-selection > *,
+.continuum-home-card > *,
+.featured-find > *,
+.featured-product > * {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Improve Continuum title visibility */
+.curators-selection h2,
+.continuum-home-card h2,
+.featured-find h2,
+.featured-product h2 {
+  text-align: center !important;
+  max-width: 100% !important;
+}
+
+/* Center and balance sculpture image */
+.curators-selection img,
+.continuum-home-card img,
+.featured-find img,
+.featured-product img,
+img[src*="continuum-sculpture"] {
+  display: block !important;
+  width: auto !important;
+  max-width: min(430px, 82vw) !important;
+  height: auto !important;
+  max-height: 560px !important;
+  object-fit: contain !important;
+  margin: 26px auto !important;
+}
+
+/* Keep the action row centered */
+.home-card-actions,
+.fhc-feature-actions,
+.selection-actions,
+.curators-selection .button,
+.continuum-home-card .button {
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+/* Make action text feel more like Found House */
+.curators-selection .text-link,
+.continuum-home-card .text-link,
+.home-card-actions .text-link {
+  color: #4f5b3a !important;
+  font-weight: 600 !important;
+}
+
+/* Mobile safety */
+@media (max-width: 768px) {
+  .hero .eyebrow,
+  .hero-eyebrow,
+  .come-in,
+  .come-in-banner,
+  [class*="eyebrow"] {
+    letter-spacing: 0.18em !important;
+    font-size: 0.78rem !important;
+  }
+
+  .hero h1,
+  .home-hero h1,
+  .intro h1 {
+    margin-top: 22px !important;
+  }
+
+  .curators-selection,
+  .continuum-home-card,
+  .featured-find,
+  .featured-product,
+  section:has(a[href="continuum.html"]) {
+    width: min(100% - 28px, 680px) !important;
+  }
+
+  .curators-selection img,
+  .continuum-home-card img,
+  .featured-find img,
+  .featured-product img,
+  img[src*="continuum-sculpture"] {
+    max-width: min(360px, 88vw) !important;
+  }
+}
