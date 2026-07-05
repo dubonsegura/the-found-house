@@ -143,3 +143,52 @@ h3 { font-size:32px; line-height:1.14; margin-bottom:12px; }
   .sculpture-stage { min-height:440px; }
   .footer-grid { grid-template-columns:1fr; }
 }
+
+
+/* Release 1.0 Brand System additions */
+.kit-grid {
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:34px;
+}
+.kit-card {
+  padding:42px;
+  background:var(--ivory);
+  border:1px solid var(--line);
+}
+.color-system {
+  background:var(--cream);
+}
+.swatch-grid {
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:16px;
+}
+.swatch {
+  min-height:180px;
+  padding:22px;
+  display:flex;
+  align-items:flex-end;
+  border:1px solid var(--line);
+  font-weight:800;
+}
+.swatch.ivory { background:#fffaf2; }
+.swatch.cream { background:#f6eddd; }
+.swatch.warm { background:#eadcc3; }
+.swatch.olive { background:#4f5c35; color:white; }
+.swatch.deep { background:#182015; color:white; }
+.template-grid {
+  display:grid;
+  grid-template-columns:.95fr 1.05fr;
+  gap:70px;
+  align-items:center;
+}
+.large-note { font-size:1.2rem; }
+.price { font-size:1.35rem; color:var(--ink); font-weight:800; }
+
+@media(max-width:1120px) {
+  .kit-grid, .swatch-grid, .template-grid { grid-template-columns:repeat(2,1fr); }
+}
+@media(max-width:760px) {
+  .kit-grid, .swatch-grid, .template-grid { grid-template-columns:1fr; }
+}

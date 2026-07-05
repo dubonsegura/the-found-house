@@ -1,20 +1,20 @@
-The Found House v9 Clean Foundation
-
-This is a clean foundation build.
+The Found House Release 1.0 Brand System
 
 Upload the CONTENTS of this folder to Hostinger public_html and GitHub.
 
-Files:
-- index.html
-- collections.html
-- philosophy.html
-- journal.html
-- contact.html
-- css/styles.css
-- js/app.js
-- images/signature-sculpture.png
-- docs/brand-brief.txt
+Included:
+- Homepage
+- Collections
+- Our Story
+- Found Notes
+- Contact
+- Brand Kit
+- Product Template
+- Reusable CSS
+- Reusable JS
+- Image folder
+- Brand brief
 
-Cache-busting has been added:
-- css/styles.css?v=9
-- js/app.js?v=9
+Main new pages:
+- brand-kit.html
+- product-template.html
