@@ -1,3 +1,3 @@
-# The Found House v7 Signature Edition
+# The Found House v8 Signature Edition
 
-Larger typography, stronger story, featured sculpture, buyer feeling section, and self-contained CSS.
+Refined editorial homepage with shorter hero, balanced typography, premium photography, featured sculpture, curator notes, story/vision, quote moments, and subtle reveal animations.

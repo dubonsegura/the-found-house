@@ -1,16 +1,18 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>The Found House | Signature Edition</title>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>The Found House | Version 8 Signature Edition</title>
 <style>
 :root {
   --ivory:#fffaf2;
   --cream:#f6eddd;
   --warm:#eadcc3;
-  --deep:#1f2418;
-  --ink:#1f2019;
-  --muted:#6f685c;
+  --sand:#dfd2bb;
+  --deep:#182015;
+  --ink:#202018;
+  --muted:#676052;
   --olive:#4f5c35;
   --olive-dark:#26311d;
   --line:#dccbb4;
   --white:#ffffff;
+  --shadow:0 28px 70px rgba(32,32,24,.10);
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -24,40 +26,51 @@ body{
 }
 img{display:block;max-width:100%;height:auto}
 a{color:inherit;text-decoration:none}
-p{margin-top:0;color:var(--muted);line-height:1.85;font-size:1.05rem}
-.container{width:min(1320px,calc(100% - 64px));margin-inline:auto}
+p{margin-top:0;color:var(--muted);line-height:1.85;font-size:1.08rem}
+.container{width:min(1320px,calc(100% - 72px));margin-inline:auto}
 .narrow{max-width:920px;margin-inline:auto}
 .site-header{
-  position:sticky;top:0;z-index:50;
-  background:rgba(255,250,242,.97);
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:rgba(255,250,242,.98);
   border-bottom:1px solid var(--line);
   backdrop-filter:blur(14px);
 }
 .header-inner{
-  min-height:104px;
+  min-height:96px;
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:44px;
+  gap:48px;
 }
 .brand{text-align:center;text-transform:uppercase;letter-spacing:.14em;min-width:330px}
 .brand span{display:block;font-size:13px;line-height:1}
 .brand strong{
   display:block;
   font-family:Georgia,'Times New Roman',serif;
-  font-size:46px;
+  font-size:44px;
   font-weight:400;
   line-height:.95;
   letter-spacing:.08em;
 }
 .brand small{
-  display:block;margin-top:9px;
+  display:block;
+  margin-top:9px;
   color:var(--muted);
   font-size:12px;
   letter-spacing:.18em;
   text-transform:none;
 }
-.nav{display:flex;gap:34px;align-items:center;font-size:15px;letter-spacing:.15em;text-transform:uppercase;font-weight:700}
+.nav{
+  display:flex;
+  gap:34px;
+  align-items:center;
+  font-size:15px;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+  font-weight:800;
+}
 .nav a{padding:10px 0;border-bottom:1px solid transparent}
 .nav a:hover{border-color:var(--olive)}
 
@@ -66,17 +79,22 @@ p{margin-top:0;color:var(--muted);line-height:1.85;font-size:1.05rem}
   text-transform:uppercase;
   letter-spacing:.23em;
   font-size:14px;
-  font-weight:800;
+  font-weight:900;
   margin-bottom:18px;
 }
-h1,h2,h3{font-family:Georgia,'Times New Roman',serif;font-weight:400;color:var(--ink);margin:0}
-h1{font-size:clamp(58px,7vw,112px);line-height:.95;letter-spacing:-.045em}
-h2{font-size:clamp(44px,4.8vw,76px);line-height:1.04;letter-spacing:-.04em;margin-bottom:24px}
-h3{font-size:34px;line-height:1.12;margin-bottom:12px}
+h1,h2,h3{
+  font-family:Georgia,'Times New Roman',serif;
+  font-weight:400;
+  color:var(--ink);
+  margin:0;
+}
+h1{font-size:clamp(54px,5.8vw,94px);line-height:.97;letter-spacing:-.045em}
+h2{font-size:clamp(40px,4.2vw,68px);line-height:1.06;letter-spacing:-.04em;margin-bottom:24px}
+h3{font-size:32px;line-height:1.14;margin-bottom:12px}
 
 .hero{
-  min-height:calc(100vh - 104px);
-  background-image:linear-gradient(90deg,rgba(15,17,12,.68),rgba(15,17,12,.28) 44%,rgba(15,17,12,.04) 82%),url('https://images.unsplash.com/photo-1600210492493-0946911123ea?auto=format&fit=crop&w=2400&q=90');
+  min-height:72vh;
+  background-image:linear-gradient(90deg,rgba(15,17,12,.52),rgba(15,17,12,.18) 48%,rgba(15,17,12,.02) 82%),url('https://images.unsplash.com/photo-1600210492493-0946911123ea?auto=format&fit=crop&w=2400&q=90');
   background-size:cover;
   background-position:center;
   display:flex;
@@ -84,17 +102,19 @@ h3{font-size:34px;line-height:1.12;margin-bottom:12px}
   border-bottom:1px solid var(--line);
 }
 .hero-panel{
-  max-width:760px;
-  padding:58px;
-  background:rgba(255,250,242,.88);
-  border:1px solid rgba(255,250,242,.7);
-  box-shadow:0 30px 90px rgba(0,0,0,.16);
+  width:min(720px,100%);
+  padding:44px 48px;
+  background:rgba(255,250,242,.84);
+  border:1px solid rgba(255,250,242,.72);
+  box-shadow:var(--shadow);
 }
-.hero-panel h1{font-size:clamp(58px,6.2vw,104px)}
-.hero-panel p{font-size:1.22rem;color:#3c3b32;max-width:620px}
+.hero-panel h1{font-size:clamp(52px,5.2vw,86px)}
+.hero-panel p{font-size:1.18rem;color:#39382f;max-width:620px}
 .actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:24px}
 .button{
-  display:inline-flex;align-items:center;justify-content:center;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
   min-height:58px;
   padding:0 30px;
   background:var(--olive);
@@ -103,46 +123,95 @@ h3{font-size:34px;line-height:1.12;margin-bottom:12px}
   text-transform:uppercase;
   letter-spacing:.14em;
   font-size:14px;
-  font-weight:800;
+  font-weight:900;
 }
 .button:hover{background:var(--olive-dark)}
 .button.secondary{background:transparent;color:var(--ink);border-color:var(--ink)}
 .button.secondary:hover{background:var(--ink);color:white}
 
-.section{padding:112px 0}
-.section-title{text-align:center;max-width:980px;margin:0 auto 54px}
+.section{padding:104px 0}
+.section-tight{padding:82px 0}
+.section-title{text-align:center;max-width:1000px;margin:0 auto 54px}
 .center{text-align:center}
 
-.brand-story{
+.quote-band{
+  background:var(--deep);
+  color:white;
+  text-align:center;
+  padding:94px 0;
+}
+.quote-band h2{color:white;font-size:clamp(42px,5vw,78px)}
+.quote-band p{color:#efe8da;font-size:1.22rem;max-width:760px;margin:0 auto}
+
+.vision{
   background:linear-gradient(180deg,var(--ivory),var(--cream));
   border-bottom:1px solid var(--line);
 }
-.story-intro{
+.vision-grid{
   display:grid;
   grid-template-columns:.95fr 1.05fr;
-  gap:70px;
+  gap:72px;
   align-items:center;
 }
-.story-intro p.lead{
+.vision-copy{
+  border-left:1px solid var(--line);
+  padding-left:36px;
+}
+.vision-copy .lead{
   font-family:Georgia,'Times New Roman',serif;
   color:var(--ink);
   font-size:2rem;
   line-height:1.45;
 }
-.story-intro .note{
-  border-left:1px solid var(--line);
-  padding-left:34px;
-}
 
-.gallery-row{
+.editorial-grid{
   display:grid;
-  grid-template-columns:1.2fr .8fr;
-  gap:28px;
+  grid-template-columns:1.1fr .9fr;
+  gap:34px;
   align-items:stretch;
 }
-.gallery-row img{width:100%;height:560px;object-fit:cover}
-.gallery-stack{display:grid;gap:28px}
-.gallery-stack img{height:266px}
+.editorial-grid img{width:100%;height:610px;object-fit:cover}
+.editorial-stack{display:grid;gap:34px}
+.editorial-stack img{height:288px}
+
+.collections-editorial{
+  background:var(--ivory);
+}
+.collection-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:34px;
+}
+.collection-card{
+  position:relative;
+  min-height:520px;
+  overflow:hidden;
+  border:1px solid var(--line);
+  background:var(--cream);
+}
+.collection-card img{
+  width:100%;
+  height:520px;
+  object-fit:cover;
+  transition:transform .65s ease;
+}
+.collection-card:hover img{transform:scale(1.045)}
+.collection-card::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.58));
+}
+.collection-copy{
+  position:absolute;
+  z-index:2;
+  left:34px;
+  right:34px;
+  bottom:34px;
+  color:white;
+}
+.collection-copy h3{color:white;font-size:42px}
+.collection-copy p{color:#f2ebdf;font-size:1.05rem;max-width:540px}
 
 .featured{
   background:var(--warm);
@@ -156,22 +225,23 @@ h3{font-size:34px;line-height:1.12;margin-bottom:12px}
   align-items:center;
 }
 .sculpture-stage{
-  min-height:720px;
+  min-height:690px;
   background:linear-gradient(135deg,#fff8ed,#ded1bb);
   display:grid;
   place-items:center;
   border:1px solid var(--line);
+  box-shadow:0 32px 80px rgba(31,32,25,.08);
 }
 .sculpture-stage img{
-  width:min(560px,82%);
+  width:min(600px,86%);
   max-height:650px;
   object-fit:contain;
-  filter:drop-shadow(0 28px 24px rgba(0,0,0,.16));
+  filter:drop-shadow(0 30px 24px rgba(0,0,0,.18));
 }
 .curator-note{
-  margin-top:32px;
-  padding:26px;
-  background:rgba(255,250,242,.62);
+  margin:32px 0 24px;
+  padding:28px 30px;
+  background:rgba(255,250,242,.68);
   border-left:4px solid var(--olive);
 }
 .curator-note strong{
@@ -180,13 +250,13 @@ h3{font-size:34px;line-height:1.12;margin-bottom:12px}
   text-transform:uppercase;
   letter-spacing:.16em;
   font-size:14px;
-  margin-bottom:8px;
+  margin-bottom:9px;
 }
 
 .product-grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
-  gap:30px;
+  gap:32px;
 }
 .card{
   background:white;
@@ -194,27 +264,26 @@ h3{font-size:34px;line-height:1.12;margin-bottom:12px}
   overflow:hidden;
   transition:transform .25s ease,box-shadow .25s ease;
 }
-.card:hover{transform:translateY(-4px);box-shadow:0 20px 45px rgba(31,32,25,.09)}
-.card img{width:100%;height:430px;object-fit:cover}
+.card:hover{transform:translateY(-5px);box-shadow:0 22px 50px rgba(31,32,25,.10)}
+.card img{width:100%;height:420px;object-fit:cover}
 .card-body{padding:30px}
-.card p{font-size:1rem}
-.card a{display:inline-block;margin-top:8px;font-size:14px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--olive)}
+.card p{font-size:1.02rem}
+.card a{display:inline-block;margin-top:8px;font-size:14px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:var(--olive)}
 
-.experience{
+.feeling{
   background:var(--ivory);
 }
-.experience-grid{
+.feeling-grid{
   display:grid;
   grid-template-columns:repeat(2,1fr);
   gap:34px;
 }
-.experience-card{
+.feeling-card{
   padding:46px;
   background:var(--cream);
   border:1px solid var(--line);
 }
-.experience-card h3{font-size:36px}
-.experience-card p{font-size:1.05rem}
+.feeling-card h3{font-size:40px}
 
 .explore-grid{
   display:grid;
@@ -222,14 +291,26 @@ h3{font-size:34px;line-height:1.12;margin-bottom:12px}
   gap:18px;
 }
 .tile{
-  position:relative;display:block;min-height:430px;overflow:hidden;border:1px solid var(--line);background:var(--cream);
+  position:relative;
+  display:block;
+  min-height:410px;
+  overflow:hidden;
+  border:1px solid var(--line);
+  background:var(--cream);
 }
-.tile img{width:100%;height:430px;object-fit:cover;transition:transform .55s ease}
+.tile img{width:100%;height:410px;object-fit:cover;transition:transform .55s ease}
 .tile:hover img{transform:scale(1.045)}
 .tile:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.04),rgba(0,0,0,.58))}
 .tile span{
-  position:absolute;z-index:2;left:24px;bottom:24px;color:white;
-  font-size:15px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;
+  position:absolute;
+  z-index:2;
+  left:24px;
+  bottom:24px;
+  color:white;
+  font-size:15px;
+  font-weight:900;
+  letter-spacing:.15em;
+  text-transform:uppercase;
 }
 
 .feedback{
@@ -268,20 +349,19 @@ h3{font-size:34px;line-height:1.12;margin-bottom:12px}
   border:0;
   text-transform:uppercase;
   letter-spacing:.16em;
-  font-weight:800;
+  font-weight:900;
 }
 
-.closing{
-  background:var(--deep);
-  color:white;
-  text-align:center;
-  padding:110px 0;
+.journal-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:32px;
 }
-.closing h2{color:white}
-.closing p{color:#eee3d4;font-size:1.2rem;max-width:760px;margin:0 auto}
 
 .footer{
-  background:#171a11;color:white;padding:76px 0;
+  background:#171a11;
+  color:white;
+  padding:78px 0;
 }
 .footer-grid{
   display:grid;
@@ -297,16 +377,19 @@ h3{font-size:34px;line-height:1.12;margin-bottom:12px}
 .footer button{width:56px;border:0;background:transparent;color:white;font-size:20px}
 .copyright{background:#10130c;color:#e9e1d4;padding:18px 5vw;font-size:13px}
 
-.page-hero{padding:120px 0;background:var(--cream);border-bottom:1px solid var(--line);text-align:center}
+.page-hero{padding:118px 0;background:var(--cream);border-bottom:1px solid var(--line);text-align:center}
 .page-hero p{font-size:1.15rem}
 .prose{padding:100px 0}
 .prose p{font-family:Georgia,'Times New Roman',serif;font-size:2rem;line-height:1.65;color:var(--ink)}
 .contact-card{width:min(880px,calc(100% - 64px));margin:90px auto;padding:60px;text-align:center;background:var(--cream);border:1px solid var(--line)}
 
-@media(max-width:1100px){
-  .product-grid{grid-template-columns:repeat(2,1fr)}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+@media(max-width:1120px){
+  .product-grid,.journal-grid{grid-template-columns:repeat(2,1fr)}
   .explore-grid{grid-template-columns:repeat(2,1fr)}
-  .featured-grid,.story-intro,.gallery-row{grid-template-columns:1fr}
+  .featured-grid,.vision-grid,.editorial-grid,.collection-grid{grid-template-columns:1fr}
   .footer-grid{grid-template-columns:1fr 1fr}
 }
 @media(max-width:760px){
@@ -315,14 +398,16 @@ h3{font-size:34px;line-height:1.12;margin-bottom:12px}
   .brand{min-width:0;margin-bottom:20px}
   .brand strong{font-size:30px}
   .nav{justify-content:center;gap:18px;flex-wrap:wrap;font-size:13px}
-  .hero{min-height:auto;padding:48px 0}
-  .hero-panel{padding:30px}
-  h1,.hero-panel h1{font-size:48px}
+  .hero{min-height:auto;padding:42px 0}
+  .hero-panel{padding:28px;background:rgba(255,250,242,.9)}
+  h1,.hero-panel h1{font-size:46px}
   h2{font-size:38px}
-  .section{padding:68px 0}
-  .product-grid,.explore-grid,.experience-grid,.feedback-form{grid-template-columns:1fr}
-  .card img,.tile,.tile img{height:330px;min-height:330px}
-  .sculpture-stage{min-height:480px}
+  .section{padding:66px 0}
+  .product-grid,.journal-grid,.explore-grid,.feedback-form,.feeling-grid{grid-template-columns:1fr}
+  .card img,.tile,.tile img,.collection-card,.collection-card img{height:330px;min-height:330px}
+  .editorial-grid img{height:360px}
+  .editorial-stack img{height:300px}
+  .sculpture-stage{min-height:460px}
   .footer-grid{grid-template-columns:1fr}
 }
 </style>
@@ -332,22 +417,29 @@ h3{font-size:34px;line-height:1.12;margin-bottom:12px}
 </div></header><main>
 <section class="hero">
   <div class="container">
-    <div class="hero-panel">
+    <div class="hero-panel reveal">
       <div class="eyebrow">Come in. Take your time.</div>
-      <h1>Beautiful things have a way of finding the right people.</h1>
+      <h1>Beautiful things find the right people.</h1>
       <p>We search everywhere for pieces worth bringing home. Some are brand new. Some have lived remarkable lives. Every one is chosen because it deserves another chapter.</p>
       <div class="actions"><a class="button" href="collections.html">Explore What’s Found</a><a class="button secondary" href="philosophy.html">Our Story</a></div>
     </div>
   </div>
 </section>
 
-<section class="section brand-story">
-  <div class="container story-intro">
+<section class="section quote-band">
+  <div class="container narrow reveal">
+    <h2>Every piece has another chapter waiting to be written.</h2>
+    <p>The Found House is built around the quiet joy of discovery.</p>
+  </div>
+</section>
+
+<section class="section vision">
+  <div class="container vision-grid reveal">
     <div>
       <div class="eyebrow">The Vision</div>
       <h2>Not just a place to shop. A place to feel at home while discovering something unexpected.</h2>
     </div>
-    <div class="note">
+    <div class="vision-copy">
       <p class="lead">The Found House was created for people who love the feeling of wandering into a beautiful place and finding something they did not know they were looking for.</p>
       <p>I want every visitor to feel calm, curious, welcomed, and inspired — even before they buy anything.</p>
     </div>
@@ -355,74 +447,90 @@ h3{font-size:34px;line-height:1.12;margin-bottom:12px}
 </section>
 
 <section class="section">
-  <div class="container gallery-row">
-    <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1800&q=90" alt="Warm room with curated pieces">
-    <div class="gallery-stack">
-      <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1400&q=90" alt="Leather jacket">
-      <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=1400&q=90" alt="Ray-Ban style sunglasses">
+  <div class="container editorial-grid reveal">
+    <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1800&q=90" alt="Warm room with curated pieces" loading="lazy">
+    <div class="editorial-stack">
+      <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1400&q=90" alt="Vintage-inspired jacket" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=1400&q=90" alt="Classic eyewear" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="section collections-editorial">
+  <div class="container">
+    <div class="section-title reveal">
+      <div class="eyebrow">Editorial Collections</div>
+      <h2>Browse by feeling, not just by category.</h2>
+      <p>Each collection is designed to feel like a small room, a mood, or a story waiting to be discovered.</p>
+    </div>
+    <div class="collection-grid">
+      <a class="collection-card reveal" href="collections.html"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=90" alt="Collected Living" loading="lazy"><div class="collection-copy"><h3>Collected Living</h3><p>Furniture, lighting, décor, and objects for rooms that feel personal.</p></div></a>
+      <a class="collection-card reveal" href="collections.html"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1400&q=90" alt="Wearable Finds" loading="lazy"><div class="collection-copy"><h3>Wearable Finds</h3><p>Clothing and accessories with character, confidence, and story.</p></div></a>
+      <a class="collection-card reveal" href="collections.html"><img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=1400&q=90" alt="Objects With Soul" loading="lazy"><div class="collection-copy"><h3>Objects With Soul</h3><p>Art, books, sculpture, and details that change the feeling of a room.</p></div></a>
+      <a class="collection-card reveal" href="collections.html"><img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1400&q=90" alt="Small Treasures" loading="lazy"><div class="collection-copy"><h3>Small Treasures</h3><p>Jewelry, eyewear, and special finds with lasting presence.</p></div></a>
     </div>
   </div>
 </section>
 
 <section class="section featured">
-  <div class="container featured-grid">
-    <div class="sculpture-stage"><img src="images/signature-sculpture.png" alt="Signature sculpture"></div>
+  <div class="container featured-grid reveal">
+    <div class="sculpture-stage"><img src="images/signature-sculpture.png" alt="Signature sculpture" loading="lazy"></div>
     <div>
       <div class="eyebrow">Featured Find</div>
       <h2>The sculpture that helped define the feeling of The Found House.</h2>
       <p>We do not choose pieces because they are old. We choose them because they have presence, character, and the quiet ability to change the feeling of a room.</p>
       <p>This sculpture is the kind of piece that makes people pause. It feels modern, expressive, and personal — exactly the kind of discovery The Found House was built to share.</p>
       <div class="curator-note"><strong>Curator’s Note</strong><p>I loved the movement in the lines. It feels strong but graceful, almost like it is mid-thought. That quiet confidence is what made it feel right for The Found House.</p></div>
-      <a class="button" href="collections.html">Explore This Piece</a>
+      <a class="button" href="contact.html">Inquire About This Piece</a>
     </div>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
-    <div class="section-title">
-      <div class="eyebrow">New reasons to come back</div>
+    <div class="section-title reveal">
+      <div class="eyebrow">New Reasons to Come Back</div>
       <h2>Objects with stories. Spaces with soul.</h2>
       <p>Every find is selected because it brings something meaningful to the next home it enters.</p>
     </div>
     <div class="product-grid">
-      <article class="card"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1400&q=90" alt=""><div class="card-body"><h3>Collected Home Pieces</h3><p>Furniture, lighting, décor, and accents for rooms that feel personal.</p><a href="collections.html">Explore →</a></div></article>
-      <article class="card"><img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1400&q=90" alt=""><div class="card-body"><h3>Jewelry & Detail</h3><p>Small pieces with presence, polish, and lasting appeal.</p><a href="collections.html">Explore →</a></div></article>
-      <article class="card"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1400&q=90" alt=""><div class="card-body"><h3>Wearable Finds</h3><p>Clothing and accessories with character, confidence, and story.</p><a href="collections.html">Explore →</a></div></article>
+      <article class="card reveal"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=90" alt="" loading="lazy"><div class="card-body"><h3>Collected Home Pieces</h3><p>Furniture, lighting, décor, and accents for rooms that feel personal.</p><a href="collections.html">Explore →</a></div></article>
+      <article class="card reveal"><img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1400&q=90" alt="" loading="lazy"><div class="card-body"><h3>Jewelry & Detail</h3><p>Small pieces with presence, polish, and lasting appeal.</p><a href="collections.html">Explore →</a></div></article>
+      <article class="card reveal"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1400&q=90" alt="" loading="lazy"><div class="card-body"><h3>Wearable Finds</h3><p>Clothing and accessories with character, confidence, and story.</p><a href="collections.html">Explore →</a></div></article>
     </div>
   </div>
 </section>
 
-<section class="section experience">
+<section class="section feeling">
   <div class="container">
-    <div class="section-title"><div class="eyebrow">How We Want You To Feel</div><h2>Relaxed. Curious. Inspired to return.</h2></div>
-    <div class="experience-grid">
-      <article class="experience-card"><h3>Calm</h3><p>You should never feel rushed here. The site is meant to feel like walking slowly through a beautiful room.</p></article>
-      <article class="experience-card"><h3>Curious</h3><p>Every visit should offer the possibility of discovering something unexpected.</p></article>
-      <article class="experience-card"><h3>Welcomed</h3><p>The Found House is personal, warm, and approachable — not cold, distant, or overly formal.</p></article>
-      <article class="experience-card"><h3>Inspired</h3><p>Even if you do not buy today, we hope you leave with an idea, a feeling, or a reason to come back.</p></article>
+    <div class="section-title reveal"><div class="eyebrow">How We Want You To Feel</div><h2>Relaxed. Curious. Inspired to return.</h2></div>
+    <div class="feeling-grid">
+      <article class="feeling-card reveal"><h3>Calm</h3><p>You should never feel rushed here. The experience is meant to feel like walking slowly through a beautiful room.</p></article>
+      <article class="feeling-card reveal"><h3>Curious</h3><p>Every visit should offer the possibility of discovering something unexpected.</p></article>
+      <article class="feeling-card reveal"><h3>Welcomed</h3><p>The Found House is personal, warm, and approachable — not cold, distant, or overly formal.</p></article>
+      <article class="feeling-card reveal"><h3>Inspired</h3><p>Even if you do not buy today, we hope you leave with an idea, a feeling, or a reason to come back.</p></article>
     </div>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
-    <div class="section-title"><div class="eyebrow">Explore by Feeling</div><h2>What are you hoping to find?</h2></div>
+    <div class="section-title reveal"><div class="eyebrow">Explore by Feeling</div><h2>What are you hoping to find?</h2></div>
     <div class="explore-grid">
-      <a class="tile" href="collections.html"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1800&q=90" alt=""><span>For Living</span></a>
-      <a class="tile" href="collections.html"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1400&q=90" alt=""><span>For Wearing</span></a>
-      <a class="tile" href="collections.html"><img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=1400&q=90" alt=""><span>For Collecting</span></a>
-      <a class="tile" href="collections.html"><img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1400&q=90" alt=""><span>For Giving</span></a>
-      <a class="tile" href="collections.html"><img src="images/signature-sculpture.png" alt=""><span>Unexpected</span></a>
+      <a class="tile reveal" href="collections.html"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1800&q=90" alt="" loading="lazy"><span>For Living</span></a>
+      <a class="tile reveal" href="collections.html"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1400&q=90" alt="" loading="lazy"><span>For Wearing</span></a>
+      <a class="tile reveal" href="collections.html"><img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=1400&q=90" alt="" loading="lazy"><span>For Collecting</span></a>
+      <a class="tile reveal" href="collections.html"><img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1400&q=90" alt="" loading="lazy"><span>For Giving</span></a>
+      <a class="tile reveal" href="collections.html"><img src="images/signature-sculpture.png" alt="" loading="lazy"><span>Unexpected</span></a>
     </div>
   </div>
 </section>
 
 <section class="section feedback">
-  <div class="container narrow">
+  <div class="container narrow reveal">
     <div class="eyebrow center">Help Us Find Better</div>
-    <h2>What would you love us to find next?</h2>
-    <p>A few clicks can help shape what we hunt for next.</p>
+    <h2>What should we hunt for next?</h2>
+    <p>A few clicks can help shape what we look for next.</p>
     <form class="feedback-form">
       <label><input type="checkbox"> Furniture & Home</label>
       <label><input type="checkbox"> Jewelry & Accessories</label>
@@ -436,15 +544,39 @@ h3{font-size:34px;line-height:1.12;margin-bottom:12px}
   </div>
 </section>
 
-<section class="closing">
-  <div class="container narrow">
+<section class="section">
+  <div class="container">
+    <div class="section-title reveal">
+      <div class="eyebrow">Found Notes</div>
+      <h2>The Curator’s Journal</h2>
+      <p>Short stories about discovery, care, character, and the joy of finding something that feels like yours.</p>
+    </div>
+    <div class="journal-grid">
+      <article class="card reveal"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=90" alt="" loading="lazy"><div class="card-body"><h3>The Beauty of a Second Chapter</h3><p>Why great pieces deserve another chance to be loved.</p><a href="journal.html">Read →</a></div></article>
+      <article class="card reveal"><img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1400&q=90" alt="" loading="lazy"><div class="card-body"><h3>How We Choose</h3><p>Quality, feeling, usefulness, and the details that make something special.</p><a href="journal.html">Read →</a></div></article>
+      <article class="card reveal"><img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1400&q=90" alt="" loading="lazy"><div class="card-body"><h3>What Makes a Favorite Find?</h3><p>Sometimes the best piece is the one you did not know you needed.</p><a href="journal.html">Read →</a></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="quote-band">
+  <div class="container narrow reveal">
     <h2>We hope you find something you didn’t know you were looking for.</h2>
     <p>If you leave inspired — even before you buy anything — then The Found House has done what it was created to do.</p>
   </div>
 </section>
 </main><footer class="footer"><div class="container footer-grid">
 <div><h3>The Found House</h3><p>A curated destination for exceptional pieces — brand new, gently used, or beautifully aged — chosen for the people who will love them next.</p></div>
-<div><h4>Shop</h4><a href="collections.html">All Finds</a><a href="collections.html">Home</a><a href="collections.html">Jewelry & Accessories</a><a href="collections.html">Art & Objects</a></div>
+<div><h4>Shop</h4><a href="collections.html">All Finds</a><a href="collections.html">Collected Living</a><a href="collections.html">Wearable Finds</a><a href="collections.html">Objects With Soul</a></div>
 <div><h4>Company</h4><a href="philosophy.html">Our Story</a><a href="journal.html">Found Notes</a><a href="contact.html">Contact</a></div>
 <div><h4>Join the Hunt</h4><p>Be first to know when remarkable finds arrive.</p><form><input type="email" placeholder="Your email address"><button type="button">→</button></form></div>
-</div></footer><div class="copyright">© 2026 The Found House. All rights reserved.</div></body></html>
+</div></footer><div class="copyright">© 2026 The Found House. All rights reserved.</div>
+<script>
+const observer = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){ entry.target.classList.add('visible'); }
+  });
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body></html>
