@@ -507,3 +507,10 @@ p {
     padding:70px 0;
   }
 }
+
+/* Atlas v1.0.1 homepage refinements */
+.hero{min-height:70vh!important}
+.hero-panel{padding:3rem!important}
+.hero-subtitle{font-size:1.4rem;color:var(--olive);font-weight:500;margin-top:-.5rem;margin-bottom:1.5rem}
+.vision-section .vision-grid{border:1px solid var(--line);padding:2rem;border-radius:18px;background:#fffdf8}
+.sculpture-stage img{max-width:72%;margin:0 auto}
