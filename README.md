@@ -4,20 +4,12 @@ Prepared by: Atlas
 Date: July 5, 2026
 
 ## Update
-Clean homepage rebuild.
-
-## Changes
-- Rebuilt homepage from scratch to stop alignment issues.
-- Kept existing navigation, pages, product page, and brand direction.
-- Centered hero, vision, Curator's Selection, and journal callout.
-- Made Continuum easy to find near the top of the homepage.
-- Kept Acquire / Offer / Reserve on the product page.
-- Preserved the existing site foundation and other pages.
+The Found House Experience homepage rebuild.
 
 ## Hostinger Upload Instructions
 1. Go to Hostinger File Manager.
 2. Open `public_html`.
-3. Upload `found-houseco-v2.0-clean-homepage.zip`.
+3. Upload `found-houseco-v2.0-found-house-experience.zip`.
 4. Extract it inside `public_html`.
 5. Choose **Overwrite** when prompted.
 6. Do not delete existing files first.
@@ -27,7 +19,7 @@ Clean homepage rebuild.
 Upload/extract the same files into your GitHub website repository.
 
 Recommended commit message:
-Rebuild homepage clean layout v2.0
+Launch Found House Experience homepage v2.0
 
 ## Filing Instructions
 Save this ZIP here:
