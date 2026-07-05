@@ -1,3 +1,3 @@
-# The Found House v8 Signature Edition
+# The Found House v8.1 Smaller Hero
 
-Refined editorial homepage with shorter hero, balanced typography, premium photography, featured sculpture, curator notes, story/vision, quote moments, and subtle reveal animations.
+Refined from Version 8 with a shorter first hero section, smaller opening headline, reduced panel padding, and more page content visible above the fold.
