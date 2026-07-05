@@ -1,4 +1,4 @@
 Found House Co. Website
-Version: v1.0.2
-Update: Contact email corrected to hello@foundhouseco.com
+Version: v1.0.3
+Update: Added Continuum product page, homepage Curator's Selection, product images, and provenance certificate.
 Date: July 5, 2026
