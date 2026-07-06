@@ -1,0 +1,378 @@
+
+/* =========================================================
+   Found House Co. v1.0.3 - Continuum Product Addition
+   ========================================================= */
+
+.product-page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 48px 0 72px;
+}
+
+.product-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+  gap: clamp(28px, 5vw, 72px);
+  align-items: center;
+  padding: 36px 0 56px;
+}
+
+.product-media img {
+  width: 100%;
+  max-height: 760px;
+  object-fit: contain;
+  border-radius: 2px;
+  background: #f7f1e8;
+}
+
+.product-summary h1 {
+  font-size: clamp(56px, 8vw, 104px);
+  line-height: 0.95;
+  margin-bottom: 12px;
+}
+
+.product-subtitle {
+  font-size: clamp(20px, 2vw, 30px);
+  line-height: 1.35;
+  color: #25211d;
+  margin: 0 0 18px;
+}
+
+.price {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 18px 0;
+}
+
+.lead {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #5f574f;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 22px;
+  border: 1px solid #25211d;
+  color: #25211d;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.button:hover {
+  background: #25211d;
+  color: #fffaf2;
+}
+
+.product-story,
+.product-details-grid,
+.certificate-preview {
+  border-top: 1px solid rgba(37, 33, 29, 0.18);
+  padding: 44px 0;
+}
+
+.product-story {
+  max-width: 880px;
+}
+
+.product-story h2,
+.product-details-grid h2,
+.certificate-preview h2 {
+  font-size: clamp(30px, 4vw, 50px);
+}
+
+.product-story p,
+.product-details-grid p,
+.detail-list {
+  color: #5f574f;
+  line-height: 1.85;
+  font-size: 17px;
+}
+
+.product-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(28px, 5vw, 72px);
+}
+
+.detail-list {
+  list-style: none;
+  padding: 0;
+}
+
+.detail-list li {
+  padding: 9px 0;
+  border-bottom: 1px solid rgba(37, 33, 29, 0.10);
+}
+
+.text-link {
+  color: #25211d;
+  font-weight: 600;
+  text-underline-offset: 4px;
+}
+
+.certificate-preview img {
+  display: block;
+  width: min(100%, 900px);
+  margin: 24px auto 0;
+  border: 1px solid rgba(37, 33, 29, 0.18);
+}
+
+@media (max-width: 820px) {
+  .product-hero,
+  .product-details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-page {
+    padding-top: 24px;
+  }
+
+  .product-summary h1 {
+    font-size: clamp(46px, 16vw, 74px);
+  }
+}
+
+
+
+/* =========================================================
+   Found House Co. v1.0.4 - Acquire / Offer / Reserve
+   ========================================================= */
+
+.quick-collection-path {
+  width: min(980px, calc(100% - 32px));
+  margin: 34px auto 18px;
+  padding: clamp(24px, 4vw, 44px);
+  border: 1px solid rgba(37, 33, 29, 0.16);
+  background: rgba(250, 246, 238, 0.72);
+  text-align: center;
+}
+
+.quick-collection-path h2 {
+  font-size: clamp(34px, 5vw, 64px);
+  margin: 0 0 12px;
+}
+
+.quick-collection-path p {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.acquisition-panel {
+  margin-top: 24px;
+  display: grid;
+  gap: 12px;
+  max-width: 420px;
+}
+
+.acquisition-panel .button {
+  text-align: center;
+  margin-top: 0;
+}
+
+.secondary-button,
+.reserve-button {
+  background: transparent;
+}
+
+.secondary-button {
+  border-style: solid;
+}
+
+.reserve-button {
+  border-color: rgba(37, 33, 29, 0.38);
+  color: #5f574f;
+}
+
+.acquisition-note {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #716a61;
+  margin: 4px 0 0;
+}
+
+.acquisition-process {
+  border-top: 1px solid rgba(37, 33, 29, 0.18);
+  padding: 44px 0;
+}
+
+.acquisition-process h2 {
+  font-size: clamp(30px, 4vw, 52px);
+  margin-bottom: 26px;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(16px, 3vw, 28px);
+}
+
+.process-grid > div {
+  padding: 24px;
+  border: 1px solid rgba(37, 33, 29, 0.14);
+  background: rgba(250, 246, 238, 0.58);
+}
+
+.process-grid h3 {
+  margin-top: 0;
+}
+
+.process-grid p {
+  color: #5f574f;
+  line-height: 1.75;
+}
+
+@media (max-width: 820px) {
+  .home-card-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .acquisition-panel {
+    max-width: 100%;
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+/* =========================================================
+   Found House Co. v1.0.5 - Layout Refinement
+   Purpose:
+   1. Stop "Come in. Take your time." from overlapping title.
+   2. Center and balance the Continuum / Curator's Selection section.
+   ========================================================= */
+
+/* Hero eyebrow spacing fix */
+.hero .eyebrow,
+.hero-eyebrow,
+.come-in,
+.come-in-banner,
+[class*="eyebrow"] {
+  letter-spacing: 0.32em !important;
+}
+
+/* Only target the homepage hero headline area */
+.hero h1,
+.home-hero h1,
+.intro h1 {
+  margin-top: 18px !important;
+}
+
+/* If the hero eyebrow sits too close, give it its own space */
+.hero p:first-child,
+.home-hero p:first-child,
+.intro p:first-child {
+  margin-bottom: 18px !important;
+}
+
+/* Continuum / Curator's Selection centering */
+.curators-selection,
+.continuum-home-card,
+.featured-find,
+.featured-product,
+section:has(a[href="continuum.html"]) {
+  width: min(1120px, calc(100% - 40px)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center !important;
+}
+
+/* Center all direct children in the curator section */
+.curators-selection > *,
+.continuum-home-card > *,
+.featured-find > *,
+.featured-product > * {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Improve Continuum title visibility */
+.curators-selection h2,
+.continuum-home-card h2,
+.featured-find h2,
+.featured-product h2 {
+  text-align: center !important;
+  max-width: 100% !important;
+}
+
+/* Center and balance sculpture image */
+.curators-selection img,
+.continuum-home-card img,
+.featured-find img,
+.featured-product img,
+img[src*="continuum-sculpture"] {
+  display: block !important;
+  width: auto !important;
+  max-width: min(430px, 82vw) !important;
+  height: auto !important;
+  max-height: 560px !important;
+  object-fit: contain !important;
+  margin: 26px auto !important;
+}
+
+/* Keep the action row centered */
+.home-card-actions,
+.fhc-feature-actions,
+.selection-actions,
+.curators-selection .button,
+.continuum-home-card .button {
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+/* Make action text feel more like Found House */
+.curators-selection .text-link,
+.continuum-home-card .text-link,
+.home-card-actions .text-link {
+  color: #4f5b3a !important;
+  font-weight: 600 !important;
+}
+
+/* Mobile safety */
+@media (max-width: 768px) {
+  .hero .eyebrow,
+  .hero-eyebrow,
+  .come-in,
+  .come-in-banner,
+  [class*="eyebrow"] {
+    letter-spacing: 0.18em !important;
+    font-size: 0.78rem !important;
+  }
+
+  .hero h1,
+  .home-hero h1,
+  .intro h1 {
+    margin-top: 22px !important;
+  }
+
+  .curators-selection,
+  .continuum-home-card,
+  .featured-find,
+  .featured-product,
+  section:has(a[href="continuum.html"]) {
+    width: min(100% - 28px, 680px) !important;
+  }
+
+  .curators-selection img,
+  .continuum-home-card img,
+  .featured-find img,
+  .featured-product img,
+  img[src*="continuum-sculpture"] {
+    max-width: min(360px, 88vw) !important;
+  }
+}
