@@ -1,6 +1,6 @@
 {
   "name": "The Found House",
-  "version": "Signature Edition v1.2 TEST MODE PATCH",
+  "version": "Signature Edition v1.3 TEST MODE PATCH",
   "date": "2026-07-09",
-  "notes": "Patch updates public wording from Certificate to Story & Collection Record and adds identity system direction."
+  "notes": "Replaced public wording using certificate/certificates with Story & Collection Record / records; added collection-record.html and redirect from old page."
 }
